@@ -46,10 +46,6 @@
   #wrapper > header {
     margin: 0;
   }
-  
-  aside {
-    order: 1;
-  }
   nav {
     display: flex;
   }
@@ -89,21 +85,6 @@ header {
     display: flex;
     flex-direction: column;
   }
-  .course .soldout {
-    display: none;
-  }
-  
-  .course.soldout .soldout {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    color: #497358;
-    display: block;
-    background-color: #8C3737;
-    transform: rotate(-45deg);
-  }
-
   .course header {
     position: relative;
     display: flex;
@@ -196,6 +177,12 @@ header {
     width: 60px;
     background-color: white;
     border-radius: 30px;
+}
+.soldout {
+  position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100px;
 }
 .image {
   position: relative;

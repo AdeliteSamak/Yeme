@@ -33,10 +33,13 @@ function createArticles(dataArticles) {
         `<article class="course">
             <header>
                 <h3>${singleDish.name}</h3>
-                <p class="soldout">Sold Out!</p>
                 <div class="image">
                     ${ singleDish.vegetarian == true ? 
                         `<img class="vegetarian" src="visual/vegetarian.png" alt="vegetarian" />` : 
+                        ''
+                    }
+                    ${ singleDish.soldout == true ? 
+                        `<img class="soldout" src="visual/soldout.png" alt="" />` : 
                         ''
                     }
                     <img id="image" src="https://kea-alt-del.dk/t5/site/imgs/medium/${singleDish.image}-md.jpg" alt="${singleDish.name}" />
