@@ -30,7 +30,7 @@ function createArticles(dataArticles) {
 
     dataArticles.forEach(singleDish => {
         document.querySelector(`#${singleDish.category}`).innerHTML += 
-        `<article class="course">
+        `<article class="dish">
             <header>
                 <h3>${singleDish.name}</h3>
                 <div class="image">
